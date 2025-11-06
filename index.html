@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Естімейтіндерге арналған көмекші</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Дыбысты мәтінге айналдыру</h1>
+        <div class="language-selector">
+            <button id="lang-kz" class="active">Қазақша</button>
+            <button id="lang-ru">Орысша</button>
+        </div>
+        <div class="recording-indicator">
+            <div class="mic-icon"></div>
+            <p id="status-text">Микрофонды қосу үшін басыңыз...</p>
+        </div>
+        <div class="waveform-container">
+            <canvas id="waveformCanvas"></canvas>
+        </div>
+        <div id="output-text" class="output-text">
+            Мәтін осында пайда болады...
+        </div>
+        <button id="startStopBtn" class="record-btn">
+            <span class="icon"></span>
+            <span class="text">Бастау</span>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
